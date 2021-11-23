@@ -1,5 +1,5 @@
 {
-    "name": "overtrue/http",
+    "name": "somhys/http",
     "description": "A simple http client wrapper.",
     "type": "library",
     "require": {
