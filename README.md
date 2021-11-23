@@ -18,7 +18,7 @@
 ## Installing
 
 ```shell
-$ composer require overtrue/http -vvv
+$ composer require somhys/http
 ```
 
 ## Usage
