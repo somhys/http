@@ -100,6 +100,20 @@ class Client
     {
         return $this->post($uri, $data, $options, true);
     }
+    
+    /**
+     * JSON request.
+     *
+     * @param string       $url
+     * @param string|array $data
+     * @param array        $query
+     *
+     * @return \Psr\Http\Message\ResponseInterface|\Overtrue\Http\Support\Collection|array|object|string
+     */
+    public function postJson(string $url, array $data = [], array $query = [])
+    {
+        return $this->request($url, 'POST', ['query' => $query, 'json' => $data]);
+    }
 
     /**
      * @param string $uri
